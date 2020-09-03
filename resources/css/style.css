@@ -5,6 +5,11 @@ html {
 
 #logo-section a {
   text-decoration: none;
+  color: #333333;
+}
+
+#logo-section img {
+  opacity: .9;
 }
 
 header {
@@ -15,8 +20,15 @@ header {
 header .header {
   display: flex;
   margin: 0px 24px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-between;
 }
 
+nav {
+  align-items: flex-end;
+  justify-content: space-between;
+}
 nav ul {
   list-style-type: none;
   display: flex;
@@ -24,6 +36,8 @@ nav ul {
 nav li a {
   text-decoration: none;
   margin-left: 16px;
+  color: #333333;
+  font-weight: 300;
 }
 
 .content {
