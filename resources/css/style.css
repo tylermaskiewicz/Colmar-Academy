@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1{
-  font-size: 2rem;
+  font-size: 2.25rem;
   margin: 0;
   font-weight: 700;
 }
@@ -45,20 +45,22 @@ h3 {
 }
 
 h4 {
+  font-size: 1.5rem;
   margin: 0;
   font-weight: 500;
+      transform: scale(1, .875);
 }
 
 h5 {
   font-weight: 300;
-  font-size: .69rem;
+  font-size: .9rem;
   margin: 8px 0;
   line-height: 1.5em;
 }
 
 h6 {
   margin: 0px;
-  font-size: .675rem;
+  font-size: .75rem;
   font-weight: 400;
 }
 
@@ -107,6 +109,11 @@ h6 {
 .right-box-image {
   width: 35%;
 }
+
+.right-box-image-mobile {
+  display: none;
+}
+
 
 .right-box-text {
   width: 65%;
@@ -181,7 +188,9 @@ header,  footer {
 
 }
 
-
+#mobile-nav {
+  display: none;
+}
 
 nav {
   align-items: flex-end;
@@ -235,7 +244,7 @@ nav li a {
   max-width: 250px;
   display: flex;
   justify-content: center;
-  margin: 8px 24px 42px 0;
+  margin: 8px 24px 0px 0;
 
 }
 
@@ -313,4 +322,107 @@ footer a {
   margin: 0px;
   font-size: .675rem;
   font-weight: 400;
+}
+
+/* mobile */
+
+@media screen and (max-width: 600px) {
+
+  .content {
+    flex-direction: column;
+  }
+
+  .left {
+    padding: 0;
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+
+  }
+
+  .right-box-image {
+    display: none;
+  }
+
+  .right-box-image-mobile {
+    display: block;
+  }
+
+  #logo-section, #desktop-nav {
+    display: none;
+  }
+
+  #mobile-nav {
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #mobile-nav ul {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+  }
+
+
+
+
+
+
+  #start-here {
+    background-color: #555555;
+    padding: 8px;
+    width: 98%;
+    max-width: 5000px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+#banner-links .left {
+  display: none;
+}
+
+#banner-links .right {
+  padding: 0;
+}
+
+.right-box, .everything-else{
+  flex-wrap: wrap;
+}
+
+.start-learning-box im, .start-learning-box h5, .start-learning-box .sl-box-image {
+  display: none;
+}
+
+.start-learning-box {
+  background-color: lightgrey;
+  margin: 4px;
+  width: 90%;
+  box-sh
+}
+
+#start-learning {
+  background-color: white;
+  padding-bottom: 32px;
+  border-bottom: solid 1px #eeeeee;
+}
+
+.right-box:last-child {
+    border-bottom: solid 1px #eeeeee;
+}
+
+.everything-else .right {
+  display: none;
+}
+
+#thesis-exhibit .title {
+  padding-bottom: 32px;
+}
+
+.left-lower-text {
+  display: none;
+}
 }
